@@ -1,0 +1,46 @@
+Install dependencies : 
+
+sudo apt-get install python3-pip
+
+---------------------------------------------------
+
+Install virtual env : 
+
+sudo apt-get install python3-dev
+
+---------------------------------------------------
+
+Create a new virtual environment : 
+
+sudo apt-get install python-virtualenv
+
+vitutalenv --system-site-packages -p python3 tensorflow
+
+
+---------------------------------------------------
+
+
+Activate virtual environment : 
+
+source ~/tensorflow/bin/activate
+
+
+---------------------------------------------------
+
+Install Tensorflow using pip : 
+
+https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.14.0-buster/tensorflow-1.14.0-cp37-none-linux_armv7l.whl
+
+
+---------------------------------------------------
+
+Run the built model : 
+
+python3 classify_picamera.py \
+  --model model.tflite \
+  --labels labels.txt
+
+
+---------------------------------------------------
+
+Your camera preview will be displayed on monitor of raspberry pi
